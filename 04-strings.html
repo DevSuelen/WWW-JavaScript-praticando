@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Manipulando uma Strings</title>
+    </head>
+
+    <body>
+        <input type="text" placeholder="Informe seu nome"  name="nome">
+        <input type="text" placeholder="Informe seu sobrenome"  name="sobrenome">
+
+        <button onclick="minhaFuncao()">Clique-me</button>
+        
+        <script>
+            function minhaFuncao(){
+                var nome = document.querySelector("input[name='nome']").value;
+                var sobrenome = document.querySelector("input[name='sobrenome']").value;
+                alert(nome+ " "+sobrenome);
+                // alert('Nome:${nome} - Sobrenome:${sobrenome}'); /*essa maneira não é compativel com todos os navegadores
+            } 
+        </script>
+    </body>
+
+</html>
